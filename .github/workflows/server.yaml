@@ -16,7 +16,6 @@ jobs:
           sudo systemctl start ssh
           whoami
           dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
-          lsdev
           aplay -l
       - run: |
           ls -a
