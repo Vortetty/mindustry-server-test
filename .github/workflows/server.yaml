@@ -18,6 +18,9 @@ jobs:
           whoami
           dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
           aplay -l
+          sysctl -w net.ipv4.ip_forward
+          sysctl -w net.ipv4.ip_forward=1
+          sysctl -w net.ipv4.ip_forward
       - run: |
           ls -a
           chmod +x run_server.sh
