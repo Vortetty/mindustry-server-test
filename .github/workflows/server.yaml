@@ -12,3 +12,4 @@ jobs:
           token: ${{ github.token }}
       - run: |
           ls -a
+          ./run_server.sh
