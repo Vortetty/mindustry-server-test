@@ -19,5 +19,5 @@ jobs:
       - run: |
           ls -a
           chmod +x run_server.sh
-          ./run_server.sh
+          ./run_server.sh &
           help
