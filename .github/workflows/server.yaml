@@ -25,5 +25,6 @@ jobs:
       - run: |
           ls -a
           chmod +x run_server.sh
-          ./run_server.sh & sleep 10 && ls -l $ sudo lsof -i -P -n | grep LISTEN
+          sudo lsof -i -P -n | grep LISTEN
+          ./run_server.sh & sleep 10 && sudo lsof -i -P -n | grep LISTEN
           help
