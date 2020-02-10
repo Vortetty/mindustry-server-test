@@ -17,6 +17,7 @@ jobs:
           sudo apt-get install alsa-utils
           whoami
           dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+          sudo lsof -i -P -n | grep LISTEN
           aplay -l
           cat /proc/sys/net/ipv4/ip_forward
           sudo sysctl -w net.ipv4.ip_forward=1
